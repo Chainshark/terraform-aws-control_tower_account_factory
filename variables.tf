@@ -120,6 +120,12 @@ variable "global_codebuild_timeout" {
   }
 }
 
+variable "custom_tags" {
+  type        = map(string)
+  description = "A map of tags to be applied to all resources"
+  default     = {}
+}
+
 #########################################
 # AFT Feature Flags
 #########################################
